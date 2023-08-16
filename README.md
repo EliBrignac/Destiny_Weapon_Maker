@@ -1,3 +1,5 @@
+# Fine Tuned Stable Diffusion Model
+
 | Image 1                  | Image 2                  |  Image 3|
 |:------------------------:|:------------------------:|   :------------------------:|
 | <img src="https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/d63e42b8-2d35-4103-922f-807870a85ded" width="100%" height="100%" alt="grid-0014"> |<img src="https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/3a8cece7-64a6-412f-b1d7-c3c3dd41644c" width="100%" height = "100%" alt="grid-0016">| <img src="https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/a1786492-ede7-4b04-a1c3-21d99c9c7332" width=100% height = 100% alt="grid-0003" >|
