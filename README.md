@@ -1,5 +1,18 @@
 # Fine Tuned Stable Diffusion Model
 
+
+# Building the Dataset
+I was unable to find a dataset of high quality destiny images, so I decided to make my own. I found this website called [destinytracker.com](https://destinytracker.com/destiny-2/db/items/weapon) that had lots of statistics and userates of all of the weapons in destiny. When you click on a weapon, a high definition image shows up, and this large collection of images is what my dataset consits of. I used my webscrapping wizardry to get all of these images, and I posted them to [Kaggle.com](https://www.kaggle.com/datasets/elibrignac/destiny-2-weapon-images/settings).
+
+# Fine Tuning the model
+Fine Tuning these powerful models such as stable diffusion is, in my mind, one of the most powerful and important abilities in this new age of Massive AI models. Being able to fine-tune a multi million dollar AI model to do what you want is something that is extremely powerful and impactful and can allow small buisnesses and people (such as myself) to create things that were previously impossible.
+
+In order to fine-tune this model, I used a google colab T4 GPU and [DreamBooth](https://github.com/TheLastBen/fast-stable-diffusion/blob/main/fast-DreamBooth.ipynb). Training over all of the images for 3000 epochs took around 40 minutes. This 3000
+
+
+
+
+
 # Text → Image
 | Image 1                  | Image 2                  |  Image 3|
 |:------------------------:|:------------------------:|   :------------------------:|
