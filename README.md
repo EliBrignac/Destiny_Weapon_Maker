@@ -1,6 +1,7 @@
 # Fine Tuned Stable Diffusion Model
 
 
+
 # Building the Dataset
 I was unable to find a dataset of high quality destiny images, so I decided to make my own. I found this website called [destinytracker.com](https://destinytracker.com/destiny-2/db/items/weapon) that had lots of statistics and userates of all of the weapons in destiny. When you click on a weapon, a high definition image shows up, and this large collection of images is what my dataset consits of. I used my webscrapping wizardry to get all of these images, and I posted them to [Kaggle.com](https://www.kaggle.com/datasets/elibrignac/destiny-2-weapon-images/settings).
 
@@ -9,7 +10,12 @@ Fine Tuning these powerful models such as stable diffusion is, in my mind, one o
 
 In order to fine-tune this model, I used a google colab T4 GPU and [DreamBooth](https://github.com/TheLastBen/fast-stable-diffusion/blob/main/fast-DreamBooth.ipynb). Training over all of the images for 3000 epochs took around 40 minutes. This 3000
 
-
+| <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/8cb21f8e-df5c-4c01-92e8-ad58c4cdb81a' width=100% height=100% alt=Linear_Fusion_Rifle_3> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/9508d4f8-17aa-4df5-91fa-9777b4564868' width=100% height=100% alt=Linear_Fusion_Rifle_26> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/def9c5da-cbee-463f-b7dc-ec92d1f29cb1' width=100% height=100% alt=Linear_Fusion_Rifle_22>| <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/345dda4b-2c63-434c-a8bd-e87dd84b44b5' width=100% height=100% alt=Linear_Fusion_Rifle_11>
+|:-------:|:-------:|:-------:|:-------: |
+ | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/175326af-5731-472a-91ea-90b4f5dfafc2' width=100% height=100% alt=Auto_Rifle_10> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/c23cbd9c-66c7-4841-9d13-756932c35a20' width=100% height=100% alt=Auto_Rifle_1> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/fd63d4ef-e2d4-40b2-a722-c1e9149270b0' width=100% height=100% alt=Auto_Rifle_8> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/150663d9-8e9d-4f62-800b-c13f3d8d84b7' width=100% height=100% alt=Auto_Rifle_61> |   
+ | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/99738d85-49ea-4706-88d2-c1125545b0f5' width=100% height=100% alt=Pulse_Rifle_24> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/cdc5c34e-6f26-4bfc-b1a0-63a5adf799b6' width=100% height=100% alt=Pulse_Rifle_7> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/14da7a52-1c32-427f-b36d-fff54ecb8c80' width=100% height=100% alt=Pulse_Rifle_74> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/d51ce9bb-3f83-46cd-b6f2-96c1fc2b3798' width=100% height=100% alt=Pulse_Rifle_64> |
+ | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/0e6f3353-724d-4c49-9182-464c4a39ac58' width=100% height=100% alt=Hand_Cannon_7> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/4dbd367a-feff-4ec6-8e76-9a66c078c4bb' width=100% height=100% alt=Hand_Cannon_37> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/105dc4bc-c5c5-415c-9635-e8575e58a5fd' width=100% height=100% alt=Hand_Cannon_10> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/59acfe97-fb3f-469c-a4f4-10d7e62dbe1b' width=100% height=100% alt=Hand_Cannon_9> |
+ | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/6e9c900f-092a-48c3-8ee0-b9d47fa0f6ee' width=100% height=100% alt=Shotgun_1> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/0b6b8395-1610-430a-b199-93df7b0c332f' width=100% height=100% alt=Shotgun_2> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/13000f60-6458-469a-ad84-a6d5f52ee105' width=100% height=100% alt=Shotgun_5> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/6739d964-7bab-4107-aaeb-715a95bb412b' width=100% height=100% alt=Rocket_Launcher_2> |
 
 
 
