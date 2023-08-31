@@ -46,7 +46,7 @@ The Txt2Img feature was alluded to in column 1 of <u>Figure 1</u> and is likely 
 
 | Description | The models output |
 |:-------:|:-------:|
-| Hand Cannon with Green Scales. Textured. Detailed. Futuristic. 4K |  <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/1b93c91b-c9ab-4088-9c07-0d4575efb990' width=35% height=35% alt=Drawing1>  |
+| Hand Cannon with Green Scales. Textured. Detailed. Futuristic. |  <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/1b93c91b-c9ab-4088-9c07-0d4575efb990' width=35% height=35% alt=Drawing1>  |
 
 
 ## Img2Img
