@@ -44,6 +44,10 @@ In order to fine-tune this model, I used a google colab T4 GPU and [DreamBooth](
 
 The Txt2Img feature was alluded to in column 1 of <u>Figure 1</u> and is likely the most intuitive feature. Txt2Img is where you give the model a description and it generated images based on that description. This feature is very helpful when you have a description of a destiny weapon design and want some images that match it. An example below is provided.
 
+| Description | The models output |
+|:-------:|:-------:|
+| Hand Cannon with Green Scales. Textured. Detailed. Futuristic. 4K |  <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/1b93c91b-c9ab-4088-9c07-0d4575efb990' width=35% height=35% alt=Drawing1>  |
+
 
 ## Img2Img
 
