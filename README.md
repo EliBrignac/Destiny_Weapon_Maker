@@ -7,7 +7,7 @@ The goal of this project is to use AI to create concept weapon images for the ga
 #### Figure 1
 |Text Input | Image Input|
 |:------:|:------:|
-| Futuristic Auto Rifle with a Vibrant blue barrel and a Glowing Crystal in the middle of its body. Textured. 4K. Detailed. | ![00038-2149986109](https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/83d56c7c-9186-4236-bd26-7901ac55e578) |
+| Futuristic Auto Rifle with a Vibrant blue barrel and a Glowing Crystal in the middle of its body. Textured. 4K. Detailed. | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/83d56c7c-9186-4236-bd26-7901ac55e578' width=150px height=150px alt=00038-2149986109> |
 | Output Images | Output Images |
 | ![grid-0004](https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/984d970d-e035-490c-9c37-d58e9efa3514) | ![grid-0000 (1)](https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/f2cabafa-e22e-4145-b556-8c0f39cb3fdb) |
 
