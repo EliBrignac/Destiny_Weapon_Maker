@@ -5,7 +5,7 @@
 The goal of this project is to use AI to create concept weapon images for the game Destiny 2. I figured that the best way to accomplish this was to fine-tune a stable diffusion model on already existing destiny weapons. Being able to generate a plethora of concept images within minutes can be used to inspire the artists of Destiny 2 to help accelerate and empower their creative process. The old school way of refining ideas and crafting hand-drawn sketches can be time-consuming, often taking hours or even days to complete. In addition to this, the majority of these concept drawings end up discarded and only a select few make into the product, meaning countless hours of drawings, refinement, and ideas generation is waisted which is very inefficient. With my Destiny Weapon generator models, I believe that this waisted time can be reduced by orders of magnitude. With these models, a Destiny 2 artist would be able to generate a plethora of images within seconds, with nothing but a description (Figure 1). Not only this, but you can also generate additional images based on initial images (Figure 1). Overall, the goal of this project is NOT to replace Destiny artists, but rather <u>empower</u> them to accelerate their creative process and reduce the time spent in the concept generation and concept refinement stages.
 
 #### Figure 1
-|Text Input (text2img) | Image Input (img2img)|
+|Text Input (txt2img) | Image Input (img2img)|
 |:------:|:------:|
 | ↓ |  ↓ |
 | Futuristic Auto Rifle with a Vibrant blue barrel and a Glowing Crystal in the middle of its body. Textured. 4K. Detailed. | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/83d56c7c-9186-4236-bd26-7901ac55e578' width=150px height=150px alt=00038-2149986109> |
@@ -40,9 +40,23 @@ In order to fine-tune this model, I used a google colab T4 GPU and [DreamBooth](
 
 # Main Features and Functions
 
-## Text2Img
+## Txt2Img
+
+The Txt2Img feature was alluded to in column 1 of <u>Figure 1</u> and is likely the most intuitive feature. Txt2Img is where you give the model a description and it generated images based on that description. This feature is very helpful when you have a description of a destiny weapon design and want some images that match it. An example below is provided.
+
 
 ## Img2Img
+
+The Img2Img feature was alluded to in column 2 of <u>Figure 1</u> and is super helpful for slight tweeks of designs. With img2img, you can give the model and image and give it an optional description, and the model will make slight additions and modifications to the design. This is SUPER useful if you have a design that you like, or a style you want to work with. You can also upload pictures that you drew yourself, and get images that are simlar to them like in the example below.
+
+#### Image Description
+- This is a rought sketch of a futuristic weapon. Add details, textures, colors, and other advanced aspects.
+  
+| A hand drawing I made in 2 minutes (I am not a good artist 😞) | The models recreations of it |
+|:-------:|:-------:|
+| <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/03c2fdef-3a56-424c-b9f4-2aeaa3a3a8f8' width=35% height=35% alt=Drawing1> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/a45824e4-30c8-4fee-8229-599ab1eb8358' width=100% height=100% alt=grid-0001> |
+
+In this example I hand drew a weapon that I thought would be cool. I then used the img2img feture to improve this sketch, because I am not very good at drawing. Granted, not all of the generated sketches look quite like the one I drew, such as the top left and top right images, but others like the top middle are very similar to what I drew. This could be in part due to my drawing being poor, however, I do not view this variation as a bad thing, as I ended up liking the top left image much more than my original image!
 
 
 ## Masking
