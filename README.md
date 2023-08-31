@@ -23,7 +23,7 @@ I was unable to find a dataset of high quality destiny images, so I decided to m
 ## Step 2) Fine Tune Stable Diffusion
 Fine Tuning powerful models, such as stable diffusion, is one of the most powerful and important abilities in this new age of Massive AI models. Being able to personalize multi million dollar AI models to do what you want allows small buisnesses and people (such as myself) to create things that would otherwise be impossible to create.
 
-In order to fine-tune this model, I used a google colab T4 GPU and [DreamBooth](https://github.com/TheLastBen/fast-stable-diffusion/blob/main/fast-DreamBooth.ipynb) ([Paper Here](https://arxiv.org/pdf/2208.12242.pdf). Training over all of the images for 3000 epochs took around 40 minutes. I saved the model at 1000, 2000, and 3000 epochs and all models can be found on hugging face to be locally downloaded and used. Visit the DreamBooth link for a colab notebook that can walk you through how to use the models. There are <u>TONS</u> of parameters on the [Gradio UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) that you can play with or read more about [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui). The things that I found to be most helpful are listed at the bottom of this README in the Tips and Tricks section. I do reccommend looking into all of the functionality of the Gradio UI because it truly is very impressive.
+In order to fine-tune this model, I used a google colab T4 GPU and [DreamBooth](https://github.com/TheLastBen/fast-stable-diffusion/blob/main/fast-DreamBooth.ipynb) ([Paper Here](https://arxiv.org/pdf/2208.12242.pdf). Training over all of the images for 3000 epochs took around 40 minutes. I saved the model at 1000, 2000, and 3000 epochs and all models can be found on hugging face to be locally downloaded and used. Visit the DreamBooth link for a colab notebook that can walk you through how to use the models. Interaction with the model is through [Gradio UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui), where there are <u>TONS</u> of parameters that you can play with or read more about [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui). The things that I found to be most helpful are listed at the bottom of this README in the Tips and Tricks section. I do reccommend looking into all of the functionality of the Gradio UI because it truly is very impressive.
 
 #### Training Image Examples
 | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/175326af-5731-472a-91ea-90b4f5dfafc2' width=100% height=100% alt=Auto_Rifle_10> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/9508d4f8-17aa-4df5-91fa-9777b4564868' width=100% height=100% alt=Linear_Fusion_Rifle_26> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/def9c5da-cbee-463f-b7dc-ec92d1f29cb1' width=100% height=100% alt=Linear_Fusion_Rifle_22> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/59acfe97-fb3f-469c-a4f4-10d7e62dbe1b' width=100% height=100% alt=Hand_Cannon_9> 
@@ -65,7 +65,7 @@ In this example I hand drew a weapon that I thought would be cool. I then used t
 # Tips and Tricks
 There are a few things you should know that would help you before you jump into generating images
 
-#### General Model Tips
+#### General Tips
 - Adding Parenthases around words in the discriptions emphasises the words
  - Example: "(Rocket Launcher) that boasts a fierce (dragon mouth) at its tip, intricately sculpted with snarling teeth and (fiery eyes), embodying both power and mythical allure."
   - In this, we emphasised the terms "Rocket Launcher", "dragon mouth", and "fiery eyes"
@@ -73,7 +73,7 @@ There are a few things you should know that would help you before you jump into 
 - Increasing the sampling steps yeilds more high definition images and better results, although the image generation will take longer
  - I have found that 80 steps is the sweet spot where anything greater than that mark takes longer and yeilds diminishing returns
 
-#### Model Functionality
+#### [Gradio UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) Functionality
 - To change the shape of the images generated, use the width and height sliders
 - Increasing the amount of sampling steps betters the image clarity, but increases the time to generate images (I found 80-100 is a sweet spot)
 - Increasing the Batch Count increases the amount of individual images generated (Batch Count = 4 and Batch Size = 1 will generate 4 individual images)
