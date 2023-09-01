@@ -14,7 +14,9 @@
 - Tips and Tricks
 
 # Project Summary
-The goal of this project is to use AI to create concept weapon images for the game Destiny 2. I figured that the best way to accomplish this was to fine-tune a stable diffusion model on already existing destiny weapons. Being able to generate a plethora of concept images within minutes can be used to inspire the artists of Destiny 2 to help accelerate and empower their creative process. The old school way of refining ideas and crafting hand-drawn sketches can be time-consuming, often taking hours or even days to complete. In addition to this, the majority of these concept drawings end up discarded and only a select few make into the product, meaning countless hours of drawings, refinement, and ideas generation is waisted which is very inefficient. With my Destiny Weapon generator models, I believe that this waisted time can be reduced by orders of magnitude. With these models, a Destiny 2 artist would be able to generate a plethora of images within seconds, with nothing but a description (Figure 1). Not only this, but you can also generate additional images based on initial images (Figure 1). Overall, the goal of this project is NOT to replace Destiny artists, but rather <u>empower</u> them to accelerate their creative process and reduce the time spent in the concept generation and concept refinement stages.
+The goal of this project is to use AI to create concept weapon images for the game Destiny 2. I figured that the best way to accomplish this was to fine-tune a stable diffusion model on already existing destiny weapons. Being able to generate a plethora of concept images within minutes can be used to inspire the artists of Destiny 2 to help accelerate and empower their creative process. The old school way of refining ideas and crafting hand-drawn sketches can be time-consuming, often taking hours or even days to complete. In addition to this, the majority of these concept drawings end up discarded and only a select few make into the product, meaning countless hours of drawings, refinement, and ideas generation is waisted which is very inefficient. With my Destiny weapon generator models, I believe that this waisted time can be reduced by orders of magnitude. With these models, a Destiny 2 artist would be able to generate a plethora of images within seconds, with nothing but a description (Figure 1). Not only this, but you can also generate additional images based on initial images (Figure 1). Overall, the goal of this project is NOT to replace Destiny artists, but rather <u>empower</u> them by accelerating their creative process and reduce the time spent in the concept generation and concept refinement.
+
+⭐ All models can be downloaded from this [link](https://drive.google.com/drive/folders/1uXZrCxHdtw7Hc6jgOgNImyyd7khvxCtJ?usp=drive_link) (Note that each model is ~2.0 GBs large) ⭐
 
 #### Figure 1
 |Text Input (txt2img) | Image Input (img2img)|
@@ -37,7 +39,6 @@ Fine Tuning powerful models, such as stable diffusion, is one of the most powerf
 
 In order to fine-tune this model, I used a google colab T4 GPU and [DreamBooth](https://github.com/TheLastBen/fast-stable-diffusion/blob/main/fast-DreamBooth.ipynb) ([Paper Here](https://arxiv.org/pdf/2208.12242.pdf). Training over all of the images for 3000 epochs took around 40 minutes. I saved the model at 1000, 2000, and 3000 epochs and all models can be found on hugging face to be locally downloaded and used. Visit the DreamBooth link for a colab notebook that can walk you through how to use the models. Interaction with the model is through [Gradio Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui), where there are <u>TONS</u> of parameters that you can play with or read more about [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui). The things that I found to be most helpful are listed at the bottom of this README in the Tips and Tricks section. I do reccommend looking into all of the functionality of the Gradio UI because it truly is very impressive.
 
-⭐ All models can be downloaded from this [link](https://drive.google.com/drive/folders/1uXZrCxHdtw7Hc6jgOgNImyyd7khvxCtJ?usp=drive_link) (Note that each model is ~2.0 GBs large) ⭐
 
 
 #### Training Image Examples
@@ -47,7 +48,6 @@ In order to fine-tune this model, I used a google colab T4 GPU and [DreamBooth](
 
 
 #### Model Ouput Examples (Various Prompts)
-
 | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/f292e199-5ea1-4434-997a-3dc74965e711' width=100% height=100% alt=00009-3350176890> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/1f09bffc-74dd-4d71-970d-fc4617040b54' width=100% height=100% alt=00039-663080793> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/5258f9d0-236c-4f36-bd30-4a583a27a989' width=100% height=100% alt=00016-1287976665> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/0848e109-216b-4010-9292-6907a0377a95' width=100% height=100% alt=00085-3758210331> |
 |:-------:|:-------:|:-------:|:-------: |
  | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/59886915-15be-43f4-95b4-016e15982f3c' width=100% height=100% alt=00107-3170333889> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/6ea74d99-550d-46ba-9dea-e98221ea316b' width=100% height=100% alt=00062-280761565> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/f78ce04b-209d-40e8-a849-d1c8eae9cfe0' width=100% height=100% alt=00027-3390551863> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/3d4650b7-739c-4ce0-87d1-c76f751e69a8' width=100% height=100% alt=00048-2875339031> |
@@ -57,7 +57,7 @@ In order to fine-tune this model, I used a google colab T4 GPU and [DreamBooth](
 
 ## Txt2Img
 
-The Txt2Img feature was alluded to in column 1 of <u>Figure 1</u> and is likely the most intuitive feature. Txt2Img is where you give the model a description and it generated images based on that description. This feature is very helpful when you have a description of a destiny weapon design and want some images that match it. An example below is provided.
+The Txt2Img feature was alluded to in column 1 of <u>Figure 1</u> and is likely the most intuitive feature. Txt2Img is where you give the model a description and it generates images based on that description. This feature is very helpful when you have a description of a Destiny weapon design and want some images that match it. An example below is provided.
 
 | Description | The models output |
 |:-------:|:-------:|
@@ -80,25 +80,27 @@ In this example I hand drew a weapon that I thought would be cool. I then used t
 
 ## Masking
 #### Image Description
+
 - Rocket Launcher that boasts a fierce dragon mouth at its tip, intricately sculpted with snarling teeth and fiery eyes, embodying both power and mythical allure.
 
 | Image 1                 | Image 2                 | Image 3                 |
 |:-----------------------:|:-----------------------:|:-----------------------:|
-|<img src="https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/f47280cf-13ec-4beb-99e3-fa12510d61af" alt="Image" width=100% height =100%> |  <img alt="PaintingOverForEyeball" src="https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/f24ee6b1-a3f6-427e-a4c7-51f024019433" width=100% height=100% > | <img src="https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/12b5eafb-4857-44d1-afca-b55f5ca9cb57" alt="Image" width=100% height =100%>|
+|<img src="https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/f47280cf-13ec-4beb-99e3-fa12510d61af" alt="Image" width=100% height =100%> |  <img width="90%" height=90% alt="PaintingOverForEyeball2" src="https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/029f56da-7c9d-4a48-ad4a-6af1c9880de6"> | <img src="https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/12b5eafb-4857-44d1-afca-b55f5ca9cb57" alt="Image" width=100% height =100%>|
 | As you can see, there is no eye | Paint over where you want the Eye | It creates an Eye! |
 
-With the masking feature, you can paint over a portion of an image and provide a prompt of either the actual weapon or what you want the painted portion to be filled in with. In this example, I had an image I liked, but I wanted to add an eye ball to it. I simply painted over where I wanted the eye, and added the same image description, but I emphasised the "fiery eyes" portion with parenthases. The model then filled in the masked portion with an eyeball that looks quite good!
+With the masking feature, you can paint over a portion of an image and provide a prompt of either the actual weapon description or what you want the painted portion to be filled in with. In this example, I had an image I liked, but I wanted to add an eye ball to it. I simply painted over where I wanted the eye, and added the same image description, but I emphasised the "fiery eyes" portion with parenthases (See Tips and Tricks). The model then filled in the masked portion with an eyeball that looks quite good!
 
 # Tips and Tricks
 There are a few things you should know that would help you before you jump into generating images
 
 #### General Tips
 - Adding Parenthases around words in the discriptions emphasises the words
- - Example: "(Rocket Launcher) that boasts a fierce (dragon mouth) at its tip, intricately sculpted with snarling teeth and (fiery eyes), embodying both power and mythical allure."
-  - In this, we emphasised the terms "Rocket Launcher", "dragon mouth", and "fiery eyes"
+   - Example: "(Rocket Launcher) that boasts a fierce (dragon mouth) at its tip, intricately sculpted with snarling teeth and (fiery eyes), embodying both power and mythical allure."
+      - In this, we emphasised the terms "Rocket Launcher", "dragon mouth", and "fiery eyes"
 - Including words like Futuristic, Detailed, Textured, 4K, HD, Advanced, etc. generally yeilds better results
+- A Better description of what you want will yeild better results.
 - Increasing the sampling steps yeilds more high definition images and better results, although the image generation will take longer
- - I have found that 80 steps is the sweet spot where anything greater than that mark takes longer and yeilds diminishing returns
+   - I have found that 80 steps is the sweet spot where anything greater than that mark takes longer and yeilds diminishing returns
 
 #### [Gradio Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) Functionality
 - To change the shape of the images generated, use the width and height sliders
