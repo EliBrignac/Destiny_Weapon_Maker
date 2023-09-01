@@ -12,6 +12,7 @@
   - img2img
   - masking
 - Tips and Tricks
+- How to use the models
 
 # Project Summary
 The goal of this project is to use AI to create concept weapon images for the game Destiny 2. I figured that the best way to accomplish this was to fine-tune a stable diffusion model on already existing destiny weapons. Being able to generate a plethora of concept images within minutes can be used to inspire the artists of Destiny 2 to help accelerate and empower their creative process. The old school way of refining ideas and crafting hand-drawn sketches can be time-consuming, often taking hours or even days to complete. In addition to this, the majority of these concept drawings end up discarded and only a select few make into the product, meaning countless hours of drawings, refinement, and ideas generation is waisted which is very inefficient. With my Destiny weapon generator models, I believe that this waisted time can be reduced by orders of magnitude. With these models, a Destiny 2 artist would be able to generate a plethora of images within seconds, with nothing but a description (Figure 1). Not only this, but you can also generate additional images based on initial images (Figure 1). Overall, the goal of this project is NOT to replace Destiny artists, but rather <u>empower</u> them by accelerating their creative process and reduce the time spent in the concept generation and concept refinement. In theory, this fine-tuned image generation should be possible for any kind of concept art, not just Destiny weapons.
@@ -26,7 +27,6 @@ The goal of this project is to use AI to create concept weapon images for the ga
 | Output Images | Output Images |
 | ↓ | ↓ |
 | <img src='readme_imgs\Img (24).png' width=100% height=100% alt=00038-2149986109> | <img src='readme_imgs\Img (23).png' width=100% height=100% alt=00038-2149986109> |
-
 
 
 # How was it made
@@ -110,7 +110,15 @@ There are a few things you should know that would help you before you jump into 
 - [CLICK HERE FOR MUCH MUCH MORE](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
 
-
+# How to use the models
+1. Visit this link to download a model of your choice (Note each model is ~2.0 GB large)
+    - Save this model to your google drive, or be prepared to upload it to Google Colab
+2. Click this [link](https://drive.google.com/file/d/14cUXO97gs2bhe-OdmhJhXItAQjJLKW-u/view?usp=drive_link) to enter the Google Colab
+    - Run the first 2 cells
+    - Check the "Use_Custom_Path" checkbox in the third cell
+    - Run the third Cell
+3. Soon a box will pop up and you will be prompted to enter the path to where the model is saved. Enter the model path and press the "Enter" key.
+4. Soon a URL will be generated, click it to open the Gradio UI and play with the model!
 
 
 
