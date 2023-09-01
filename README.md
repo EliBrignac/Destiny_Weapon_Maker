@@ -1,7 +1,19 @@
 # Fine Tuned Stable Diffusion Model
 
+## Table of Contents 
+- Project Summary
+- How it was Made
+  - Building the Dataset
+  - Fine-Tuning the model
+  - Model Downloads
+- Example Output Images
+- Main Features and Functions
+  - txt2img
+  - img2img
+  - masking
+- Tips and Tricks
 
-## Project Summary
+# Project Summary
 The goal of this project is to use AI to create concept weapon images for the game Destiny 2. I figured that the best way to accomplish this was to fine-tune a stable diffusion model on already existing destiny weapons. Being able to generate a plethora of concept images within minutes can be used to inspire the artists of Destiny 2 to help accelerate and empower their creative process. The old school way of refining ideas and crafting hand-drawn sketches can be time-consuming, often taking hours or even days to complete. In addition to this, the majority of these concept drawings end up discarded and only a select few make into the product, meaning countless hours of drawings, refinement, and ideas generation is waisted which is very inefficient. With my Destiny Weapon generator models, I believe that this waisted time can be reduced by orders of magnitude. With these models, a Destiny 2 artist would be able to generate a plethora of images within seconds, with nothing but a description (Figure 1). Not only this, but you can also generate additional images based on initial images (Figure 1). Overall, the goal of this project is NOT to replace Destiny artists, but rather <u>empower</u> them to accelerate their creative process and reduce the time spent in the concept generation and concept refinement stages.
 
 #### Figure 1
@@ -25,7 +37,7 @@ Fine Tuning powerful models, such as stable diffusion, is one of the most powerf
 
 In order to fine-tune this model, I used a google colab T4 GPU and [DreamBooth](https://github.com/TheLastBen/fast-stable-diffusion/blob/main/fast-DreamBooth.ipynb) ([Paper Here](https://arxiv.org/pdf/2208.12242.pdf). Training over all of the images for 3000 epochs took around 40 minutes. I saved the model at 1000, 2000, and 3000 epochs and all models can be found on hugging face to be locally downloaded and used. Visit the DreamBooth link for a colab notebook that can walk you through how to use the models. Interaction with the model is through [Gradio Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui), where there are <u>TONS</u> of parameters that you can play with or read more about [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui). The things that I found to be most helpful are listed at the bottom of this README in the Tips and Tricks section. I do reccommend looking into all of the functionality of the Gradio UI because it truly is very impressive.
 
-<u>All models can be downloaded from this [link](https://drive.google.com/drive/folders/1uXZrCxHdtw7Hc6jgOgNImyyd7khvxCtJ?usp=drive_link) (Note that each model is ~2.0 GBs large.)</u>
+⭐ All models can be downloaded from this [link](https://drive.google.com/drive/folders/1uXZrCxHdtw7Hc6jgOgNImyyd7khvxCtJ?usp=drive_link) (Note that each model is ~2.0 GBs large) ⭐
 
 
 #### Training Image Examples
@@ -76,17 +88,6 @@ In this example I hand drew a weapon that I thought would be cool. I then used t
 | As you can see, there is no eye | Paint over where you want the Eye | It creates an Eye! |
 
 With the masking feature, you can paint over a portion of an image and provide a prompt of either the actual weapon or what you want the painted portion to be filled in with. In this example, I had an image I liked, but I wanted to add an eye ball to it. I simply painted over where I wanted the eye, and added the same image description, but I emphasised the "fiery eyes" portion with parenthases. The model then filled in the masked portion with an eyeball that looks quite good!
-
-## Generating Sketches
-#### Image Description
-- This is a rought sketch of a futuristic weapon. Add details, textures, colors, and other advanced aspects.
-  
-| A hand drawing I made in 2 minutes (I am not a good artist 😞) | The models recreations of it |
-|:-------:|:-------:|
-| <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/03c2fdef-3a56-424c-b9f4-2aeaa3a3a8f8' width=35% height=35% alt=Drawing1> | <img src='https://github.com/EliBrignac/Destiny_Weapon_Maker/assets/94129362/a45824e4-30c8-4fee-8229-599ab1eb8358' width=100% height=100% alt=grid-0001> |
-
-In this example I hand drew a weapon that I thought would be cool. I then used the img2img feture to improve this sketch, because I am not very good at drawing. Granted, not all of the generated sketches look quite like the one I drew, such as the top left and top right images, but others like the top middle look quite like what I drew. However, I do not view this variation as a bad thing, as I ended up liking the top left image the most!
-
 
 # Tips and Tricks
 There are a few things you should know that would help you before you jump into generating images
