@@ -1,4 +1,4 @@
-# Fine Tuned Stable Diffusion Model
+# Destiny-2 Concept Image Maker
 
 ## Table of Contents 
 - Project Summary
